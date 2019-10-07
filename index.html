@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+	
+	<div id="outmostcontainer">
+		<div id="outercontainer">
+			<div id="formcontainer">
+				<div class="image-container">
+					<img src="bg-01.jpg">
+					<div class="after">
+						<span>
+								SIGN IN
+						</span>
+					</div>
+				</div>
+				
+				<form method="POST" action="verification.php">
+					<div validate-input m-b-26" data-validate="Username is required" id="username">
+						<span id="usernametext">Username</span>
+						<input type="text" name="username" placeholder="Enter username" id="username-input" required>
+						<span></span>
+					</div>
+
+					<div data-validate = "Password is required">
+						<span id="passwordtext">Password</span>
+						<input type="password" name="pass" placeholder="Enter password" id="password-input" required>
+						<span></span>
+					</div>
+
+					<div>
+						<div id="remember-me">
+							<input id="ckb1" type="checkbox" name="remember-me">
+							<label  for="ckb1" id="remember-text">
+								Remember me
+							</label>
+						</div>
+
+						<div id="forgetdiv">
+							<a href="#" class="txt1" id="forgot-text">
+								Forgot Password?
+							</a>
+						</div>
+					</div>
+					<div id="reglink">
+							<a href="third.php" class="txt1" id="reglink-text">
+								Don't have an account?
+							</a>
+					</div>
+
+					<div>
+						<button id="login-button">
+							Login
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
+
+<style type="text/css">
+	body{
+		margin: 0;
+	}
+
+	form{
+		font-family: arial;
+		margin: 5% 10% 5% 10%;
+		position: absolute;
+	}
+
+	#outercontainer{
+		width: 100%;
+		height: 700px;
+		margin: 4% 0 4% 0;
+		background-color: silver;
+	}
+
+	#formcontainer{
+		width: 600px;
+		height: 500px;
+		background-color: #efefef;
+		border: solid 0px;
+		border-radius: 10px;
+		position: absolute;
+		margin: 7% 30% 7% 30%;
+	}
+
+	#header{
+		width: 100%;
+		height: 160px;
+		color: white;
+		text-align: center;
+		line-height: 160px;
+		font-family: arial;
+		font-style: bold;
+		font-size: 40px;
+		border-top: solid 0px;
+		border-bottom: none;
+		border-radius: 10px;
+	}
+
+	#usernametext,#passwordtext{
+		display: inline-block;
+		width: 100px;
+		font-size: 15px;
+	}
+
+	#username-input,#password-input{
+		display: inline-block;
+		width: 350px;
+		height: 40px;
+		border: none;
+		border-bottom: solid 2px;
+		background-color: #efefef;
+		border-color: #666666;
+	}
+
+	#password-input{
+		margin-top: 5%;
+	}
+
+	#remember-me{
+		display: inline-block;
+		margin-top: 5%;
+		margin-left: 22%;
+	}
+
+	#remember-text{
+		font-size: 12px;
+		color: #444444;
+	}
+
+	#forgot-text{
+		font-size: 12px;
+		color: #444444;
+		text-decoration: none;
+	}
+	#forgetdiv{
+		position: absolute;
+		display: inline-block;
+		left: 75%;
+		margin-top: 5%;
+	}
+	#reglink{
+		position: absolute;
+		display: inline-block;
+		margin-top: 2%;
+		margin-left: 22%;
+	}
+	#reglink-text{
+		font-size: 12px;
+		text-decoration: none;
+		color: #444444;
+	}
+	#reglink-text:hover,#forgot-text:hover{
+		text-decoration: underline;
+	}
+
+	#login-button{
+		padding: 10px 40px 10px 40px;
+		border-radius: 20px;
+		border: solid 0px;
+		color: white;
+		background-color: #0ab226;
+		margin-top: 12%;
+		margin-left: 22%;
+	}
+	img{
+		border-top: solid 0px;
+		border-bottom: none;
+		border-radius: 10px;
+		width: 100%;
+	}
+
+	.image-container {
+		position: relative;
+	    width: 100%;
+	    height: 160px;
+	}
+
+	.image-container .after {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    display: block;
+	    background: rgba(56, 73, 99, 0.7);
+	    color: white;
+		text-align: center;
+		line-height: 160px;
+		font-family: arial;
+		font-style: bold;
+		font-size: 40px;
+		border-top: solid 0px;
+		border-bottom: none;
+		border-radius: 10px;
+	}
+</style>
